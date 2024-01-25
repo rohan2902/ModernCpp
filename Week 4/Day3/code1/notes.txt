@@ -1,0 +1,6 @@
+-return the count of employees whos name is less than 7 characters
+
+- find salary of employee whose ID is received as a parameter
+
+- find the average salary for only those employees whose id is passed as a vector of integers passed to the function
+

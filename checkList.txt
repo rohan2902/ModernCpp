@@ -1,0 +1,72 @@
+#Developer checkList
+
+### Proficiency in at least in 3 Languages
+    a) system programming language(C,C++,Rust)
+    b) Scripting language:Python,Lua or your preferred shell script
+    c) Object oriented Programming language(Java,Kotlin,C++)
+
+### Linear data structures
+    a)List b)Vector c)Array d)Hash Table implementations*
+    e) stack & queue(priority queue,deque)
+
+### UML Diagrams
+    a) class b) Activity c)Sequence d) Use case
+
+### Version Control
+    ex.Git using command line is a great option
+
+### Use of Command Linear
+    ex.Working with GNU utilities on a UNIX/LINUX system
+    a) GNU utilities must be mastered properly
+
+
+*### Non-Limear data structures
+    a) Tree (BST,BT,AVL,RB,N-nary tree,etc)
+    b) Graph (cyclic and acyclic graph,fully and partially connected graph)
+
+*### Essential Algorithm
+    a) Linear search,binary search,DFS,BFS,sorting algorithm(bubble sort,merge sort,insertion sort,selection sort,quich sort,radix sort,heap sort)
+
+*### Problem solving techniques
+    a) Brute force, b) Divide & conquer c) Recursion d) Dymanic programming(involving memorization),Backtracking
+
+### Virtualization 
+    a) VMs & Hypervisors
+    b) Installing & Maintaining VM using a hypervisor (at least through GUI)
+    c) Theory of Virtualization
+    d) networking in VM^
+
+## Design patterns
+	-refactor.guru website
+
+### OS
+       -galvin book
+
+### Database , Relatiional and non-relational Database
+
+
+### Networking Fundamentals
+    - ip address,port number,protocols (e.g.tcp,udp)
+    - subnetting,masks,ISO-OSI layers
+    - firewalls!
+    
+### containerization using a container management tool 
+    - container management commands 
+    - images (using and creating them)
+    - networking modes of the container (overlap with above) 
+
+### type of API & API concepts
+    - REST API
+    - SOAP API
+    - RPC,gRPC,JSON_RPC
+    -graphQL
+
+(Note: Networking fundamentals & Virtualization must)
+### cloud computing concepts
+    -Saas,paas,iaas,etc
+    -DNS,Instance creation,api routing,load balancing,real-time message processing queues
+
+//project stuff
+DSA
+c,cpp,modern cpp
+terminal,git

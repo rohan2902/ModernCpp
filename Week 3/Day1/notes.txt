@@ -1,0 +1,34 @@
+objectives:
+
+1)Concurrency : Ability to do context-switching between running tasks to achieve better performance (concurrent execute)
+
+2) parallelism : Doing more than one action AT THE SAME MOMENT IN THE BASE OF  HARDWARE AVAILABILITY
+
+3) Learn more about lock-based synchronization primitives 
+
+    1)MUTEX
+    2)SEMAPHORE
+    3)RECURSIVE LOCKING 
+    4)CONDITIONAL LOCKING
+    5)SCOPE-BASED LOCKING(BASED ON RAII PRINCIPLE)
+
+    ////////////////////////////////////////////////
+
+4) Algebraic data types in modern c++
+    -Optional
+    -Variant
+    -any
+
+5) Learn some behind-the-scenes optimization techniques
+    -guaranteed copy elision
+    -constexpr
+
+6) if and switch initializers
+
+7) structured binding
+
+
+Regarding systems
+
+1) memory(primary memory or RAM)
+2) processing hardware unit (intel ya AMD or Apple silicon device)

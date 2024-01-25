@@ -1,0 +1,6 @@
+nvim .gitignore
+
+cat .gitignore
+
+git status
+

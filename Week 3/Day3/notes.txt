@@ -1,0 +1,7 @@
+std::variant can be used for functional polymorphism
+
+which could be a replacable for runtime polymorphism.
+
+
+// to access anything from the variant we use visit(std::visit)
+

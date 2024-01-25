@@ -1,0 +1,311 @@
+In file included from /usr/include/x86_64-linux-gnu/c++/9/bits/c++allocator.h:33,
+                 from /usr/include/c++/9/bits/allocator.h:46,
+                 from /usr/include/c++/9/string:41,
+                 from /usr/include/c++/9/bits/locale_classes.h:40,
+                 from /usr/include/c++/9/bits/ios_base.h:41,
+                 from /usr/include/c++/9/ios:42,
+                 from /usr/include/c++/9/ostream:38,
+                 from /usr/include/c++/9/iostream:39,
+                 from Liscence.h:5,
+                 from Driver.h:5,
+                 from Functionalities.h:3,
+                 from Functionalities.cpp:1:
+/usr/include/c++/9/ext/new_allocator.h: In instantiation of ‘void __gnu_cxx::new_allocator<_Tp>::construct(_Up*, _Args&& ...) [with _Up = std::shared_ptr<Liscence>; _Args = {std::shared_ptr<Driver>&}; _Tp = std::shared_ptr<Liscence>]’:
+/usr/include/c++/9/bits/alloc_traits.h:483:4:   required from ‘static void std::allocator_traits<std::allocator<_CharT> >::construct(std::allocator_traits<std::allocator<_CharT> >::allocator_type&, _Up*, _Args&& ...) [with _Up = std::shared_ptr<Liscence>; _Args = {std::shared_ptr<Driver>&}; _Tp = std::shared_ptr<Liscence>; std::allocator_traits<std::allocator<_CharT> >::allocator_type = std::allocator<std::shared_ptr<Liscence> >]’
+/usr/include/c++/9/bits/vector.tcc:115:30:   required from ‘std::vector<_Tp, _Alloc>::reference std::vector<_Tp, _Alloc>::emplace_back(_Args&& ...) [with _Args = {std::shared_ptr<Driver>&}; _Tp = std::shared_ptr<Liscence>; _Alloc = std::allocator<std::shared_ptr<Liscence> >; std::vector<_Tp, _Alloc>::reference = std::shared_ptr<Liscence>&]’
+Functionalities.cpp:122:40:   required from here
+/usr/include/c++/9/ext/new_allocator.h:146:4: error: no matching function for call to ‘std::shared_ptr<Liscence>::shared_ptr(std::shared_ptr<Driver>&)’
+  146 |  { ::new((void *)__p) _Up(std::forward<_Args>(__args)...); }
+      |    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/c++/9/memory:81,
+                 from Driver.h:6,
+                 from Functionalities.h:3,
+                 from Functionalities.cpp:1:
+/usr/include/c++/9/bits/shared_ptr.h:367:7: note: candidate: ‘std::shared_ptr<_Tp>::shared_ptr(const std::weak_ptr<_Tp>&, std::nothrow_t) [with _Tp = Liscence]’
+  367 |       shared_ptr(const weak_ptr<_Tp>& __r, std::nothrow_t)
+      |       ^~~~~~~~~~
+/usr/include/c++/9/bits/shared_ptr.h:367:7: note:   candidate expects 2 arguments, 1 provided
+/usr/include/c++/9/bits/shared_ptr.h:358:2: note: candidate: ‘template<class _Alloc, class ... _Args> std::shared_ptr<_Tp>::shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...)’
+  358 |  shared_ptr(_Sp_alloc_shared_tag<_Alloc> __tag, _Args&&... __args)
+      |  ^~~~~~~~~~
+/usr/include/c++/9/bits/shared_ptr.h:358:2: note:   template argument deduction/substitution failed:
+In file included from /usr/include/x86_64-linux-gnu/c++/9/bits/c++allocator.h:33,
+                 from /usr/include/c++/9/bits/allocator.h:46,
+                 from /usr/include/c++/9/string:41,
+                 from /usr/include/c++/9/bits/locale_classes.h:40,
+                 from /usr/include/c++/9/bits/ios_base.h:41,
+                 from /usr/include/c++/9/ios:42,
+                 from /usr/include/c++/9/ostream:38,
+                 from /usr/include/c++/9/iostream:39,
+                 from Liscence.h:5,
+                 from Driver.h:5,
+                 from Functionalities.h:3,
+                 from Functionalities.cpp:1:
+/usr/include/c++/9/ext/new_allocator.h:146:4: note:   ‘std::shared_ptr<Driver>’ is not derived from ‘std::_Sp_alloc_shared_tag<_Tp>’
+  146 |  { ::new((void *)__p) _Up(std::forward<_Args>(__args)...); }
+      |    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/c++/9/memory:81,
+                 from Driver.h:6,
+                 from Functionalities.h:3,
+                 from Functionalities.cpp:1:
+/usr/include/c++/9/bits/shared_ptr.h:307:17: note: candidate: ‘constexpr std::shared_ptr<_Tp>::shared_ptr(std::nullptr_t) [with _Tp = Liscence; std::nullptr_t = std::nullptr_t]’
+  307 |       constexpr shared_ptr(nullptr_t) noexcept : shared_ptr() { }
+      |                 ^~~~~~~~~~
+/usr/include/c++/9/bits/shared_ptr.h:307:28: note:   no known conversion for argument 1 from ‘std::shared_ptr<Driver>’ to ‘std::nullptr_t’
+  307 |       constexpr shared_ptr(nullptr_t) noexcept : shared_ptr() { }
+      |                            ^~~~~~~~~
+/usr/include/c++/9/bits/shared_ptr.h:290:2: note: candidate: ‘template<class _Yp, class _Del, class> std::shared_ptr<_Tp>::shared_ptr(std::unique_ptr<_Up, _Ep>&&)’
+  290 |  shared_ptr(unique_ptr<_Yp, _Del>&& __r)
+      |  ^~~~~~~~~~
+/usr/include/c++/9/bits/shared_ptr.h:290:2: note:   template argument deduction/substitution failed:
+In file included from /usr/include/x86_64-linux-gnu/c++/9/bits/c++allocator.h:33,
+                 from /usr/include/c++/9/bits/allocator.h:46,
+                 from /usr/include/c++/9/string:41,
+                 from /usr/include/c++/9/bits/locale_classes.h:40,
+                 from /usr/include/c++/9/bits/ios_base.h:41,
+                 from /usr/include/c++/9/ios:42,
+                 from /usr/include/c++/9/ostream:38,
+                 from /usr/include/c++/9/iostream:39,
+                 from Liscence.h:5,
+                 from Driver.h:5,
+                 from Functionalities.h:3,
+                 from Functionalities.cpp:1:
+/usr/include/c++/9/ext/new_allocator.h:146:4: note:   ‘std::shared_ptr<Driver>’ is not derived from ‘std::unique_ptr<_Tp, _Dp>’
+  146 |  { ::new((void *)__p) _Up(std::forward<_Args>(__args)...); }
+      |    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/c++/9/memory:81,
+                 from Driver.h:6,
+                 from Functionalities.h:3,
+                 from Functionalities.cpp:1:
+/usr/include/c++/9/bits/shared_ptr.h:282:2: note: candidate: ‘template<class _Yp, class> std::shared_ptr<_Tp>::shared_ptr(std::auto_ptr<_Up>&&)’
+  282 |  shared_ptr(auto_ptr<_Yp>&& __r);
+      |  ^~~~~~~~~~
+/usr/include/c++/9/bits/shared_ptr.h:282:2: note:   template argument deduction/substitution failed:
+In file included from /usr/include/x86_64-linux-gnu/c++/9/bits/c++allocator.h:33,
+                 from /usr/include/c++/9/bits/allocator.h:46,
+                 from /usr/include/c++/9/string:41,
+                 from /usr/include/c++/9/bits/locale_classes.h:40,
+                 from /usr/include/c++/9/bits/ios_base.h:41,
+                 from /usr/include/c++/9/ios:42,
+                 from /usr/include/c++/9/ostream:38,
+                 from /usr/include/c++/9/iostream:39,
+                 from Liscence.h:5,
+                 from Driver.h:5,
+                 from Functionalities.h:3,
+                 from Functionalities.cpp:1:
+/usr/include/c++/9/ext/new_allocator.h:146:4: note:   ‘std::shared_ptr<Driver>’ is not derived from ‘std::auto_ptr<_Up>’
+  146 |  { ::new((void *)__p) _Up(std::forward<_Args>(__args)...); }
+      |    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/c++/9/memory:81,
+                 from Driver.h:6,
+                 from Functionalities.h:3,
+                 from Functionalities.cpp:1:
+/usr/include/c++/9/bits/shared_ptr.h:275:11: note: candidate: ‘template<class _Yp, class> std::shared_ptr<_Tp>::shared_ptr(const std::weak_ptr<_Yp>&)’
+  275 |  explicit shared_ptr(const weak_ptr<_Yp>& __r)
+      |           ^~~~~~~~~~
+/usr/include/c++/9/bits/shared_ptr.h:275:11: note:   template argument deduction/substitution failed:
+In file included from /usr/include/x86_64-linux-gnu/c++/9/bits/c++allocator.h:33,
+                 from /usr/include/c++/9/bits/allocator.h:46,
+                 from /usr/include/c++/9/string:41,
+                 from /usr/include/c++/9/bits/locale_classes.h:40,
+                 from /usr/include/c++/9/bits/ios_base.h:41,
+                 from /usr/include/c++/9/ios:42,
+                 from /usr/include/c++/9/ostream:38,
+                 from /usr/include/c++/9/iostream:39,
+                 from Liscence.h:5,
+                 from Driver.h:5,
+                 from Functionalities.h:3,
+                 from Functionalities.cpp:1:
+/usr/include/c++/9/ext/new_allocator.h:146:4: note:   ‘std::shared_ptr<Driver>’ is not derived from ‘const std::weak_ptr<_Tp>’
+  146 |  { ::new((void *)__p) _Up(std::forward<_Args>(__args)...); }
+      |    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/c++/9/memory:81,
+                 from Driver.h:6,
+                 from Functionalities.h:3,
+                 from Functionalities.cpp:1:
+/usr/include/c++/9/bits/shared_ptr.h:263:2: note: candidate: ‘template<class _Yp, class> std::shared_ptr<_Tp>::shared_ptr(std::shared_ptr<_Yp>&&)’
+  263 |  shared_ptr(shared_ptr<_Yp>&& __r) noexcept
+      |  ^~~~~~~~~~
+/usr/include/c++/9/bits/shared_ptr.h:263:2: note:   template argument deduction/substitution failed:
+/usr/include/c++/9/bits/shared_ptr.h: In substitution of ‘template<class _Tp> template<class ... _Args> using _Constructible = typename std::enable_if<std::is_constructible<std::__shared_ptr<_Tp>, _Args ...>::value>::type [with _Args = {std::shared_ptr<Driver>}; _Tp = Liscence]’:
+/usr/include/c++/9/bits/shared_ptr.h:262:30:   required from ‘void __gnu_cxx::new_allocator<_Tp>::construct(_Up*, _Args&& ...) [with _Up = std::shared_ptr<Liscence>; _Args = {std::shared_ptr<Driver>&}; _Tp = std::shared_ptr<Liscence>]’
+/usr/include/c++/9/bits/alloc_traits.h:483:4:   required from ‘static void std::allocator_traits<std::allocator<_CharT> >::construct(std::allocator_traits<std::allocator<_CharT> >::allocator_type&, _Up*, _Args&& ...) [with _Up = std::shared_ptr<Liscence>; _Args = {std::shared_ptr<Driver>&}; _Tp = std::shared_ptr<Liscence>; std::allocator_traits<std::allocator<_CharT> >::allocator_type = std::allocator<std::shared_ptr<Liscence> >]’
+/usr/include/c++/9/bits/vector.tcc:115:30:   required from ‘std::vector<_Tp, _Alloc>::reference std::vector<_Tp, _Alloc>::emplace_back(_Args&& ...) [with _Args = {std::shared_ptr<Driver>&}; _Tp = std::shared_ptr<Liscence>; _Alloc = std::allocator<std::shared_ptr<Liscence> >; std::vector<_Tp, _Alloc>::reference = std::shared_ptr<Liscence>&]’
+Functionalities.cpp:122:40:   required from here
+/usr/include/c++/9/bits/shared_ptr.h:106:8: error: no type named ‘type’ in ‘struct std::enable_if<false, void>’
+  106 |  using _Constructible = typename enable_if<
+      |        ^~~~~~~~~~~~~~
+/usr/include/c++/9/ext/new_allocator.h: In instantiation of ‘void __gnu_cxx::new_allocator<_Tp>::construct(_Up*, _Args&& ...) [with _Up = std::shared_ptr<Liscence>; _Args = {std::shared_ptr<Driver>&}; _Tp = std::shared_ptr<Liscence>]’:
+/usr/include/c++/9/bits/alloc_traits.h:483:4:   required from ‘static void std::allocator_traits<std::allocator<_CharT> >::construct(std::allocator_traits<std::allocator<_CharT> >::allocator_type&, _Up*, _Args&& ...) [with _Up = std::shared_ptr<Liscence>; _Args = {std::shared_ptr<Driver>&}; _Tp = std::shared_ptr<Liscence>; std::allocator_traits<std::allocator<_CharT> >::allocator_type = std::allocator<std::shared_ptr<Liscence> >]’
+/usr/include/c++/9/bits/vector.tcc:115:30:   required from ‘std::vector<_Tp, _Alloc>::reference std::vector<_Tp, _Alloc>::emplace_back(_Args&& ...) [with _Args = {std::shared_ptr<Driver>&}; _Tp = std::shared_ptr<Liscence>; _Alloc = std::allocator<std::shared_ptr<Liscence> >; std::vector<_Tp, _Alloc>::reference = std::shared_ptr<Liscence>&]’
+Functionalities.cpp:122:40:   required from here
+/usr/include/c++/9/bits/shared_ptr.h:254:7: note: candidate: ‘std::shared_ptr<_Tp>::shared_ptr(std::shared_ptr<_Tp>&&) [with _Tp = Liscence]’
+  254 |       shared_ptr(shared_ptr&& __r) noexcept
+      |       ^~~~~~~~~~
+/usr/include/c++/9/bits/shared_ptr.h:254:31: note:   no known conversion for argument 1 from ‘std::shared_ptr<Driver>’ to ‘std::shared_ptr<Liscence>&&’
+  254 |       shared_ptr(shared_ptr&& __r) noexcept
+      |                  ~~~~~~~~~~~~~^~~
+/usr/include/c++/9/bits/shared_ptr.h:246:2: note: candidate: ‘template<class _Yp, class> std::shared_ptr<_Tp>::shared_ptr(const std::shared_ptr<_Yp>&)’
+  246 |  shared_ptr(const shared_ptr<_Yp>& __r) noexcept
+      |  ^~~~~~~~~~
+/usr/include/c++/9/bits/shared_ptr.h:246:2: note:   template argument deduction/substitution failed:
+/usr/include/c++/9/bits/shared_ptr.h: In substitution of ‘template<class _Tp> template<class ... _Args> using _Constructible = typename std::enable_if<std::is_constructible<std::__shared_ptr<_Tp>, _Args ...>::value>::type [with _Args = {const std::shared_ptr<Driver>&}; _Tp = Liscence]’:
+/usr/include/c++/9/bits/shared_ptr.h:245:9:   required from ‘void __gnu_cxx::new_allocator<_Tp>::construct(_Up*, _Args&& ...) [with _Up = std::shared_ptr<Liscence>; _Args = {std::shared_ptr<Driver>&}; _Tp = std::shared_ptr<Liscence>]’
+/usr/include/c++/9/bits/alloc_traits.h:483:4:   required from ‘static void std::allocator_traits<std::allocator<_CharT> >::construct(std::allocator_traits<std::allocator<_CharT> >::allocator_type&, _Up*, _Args&& ...) [with _Up = std::shared_ptr<Liscence>; _Args = {std::shared_ptr<Driver>&}; _Tp = std::shared_ptr<Liscence>; std::allocator_traits<std::allocator<_CharT> >::allocator_type = std::allocator<std::shared_ptr<Liscence> >]’
+/usr/include/c++/9/bits/vector.tcc:115:30:   required from ‘std::vector<_Tp, _Alloc>::reference std::vector<_Tp, _Alloc>::emplace_back(_Args&& ...) [with _Args = {std::shared_ptr<Driver>&}; _Tp = std::shared_ptr<Liscence>; _Alloc = std::allocator<std::shared_ptr<Liscence> >; std::vector<_Tp, _Alloc>::reference = std::shared_ptr<Liscence>&]’
+Functionalities.cpp:122:40:   required from here
+/usr/include/c++/9/bits/shared_ptr.h:106:8: error: no type named ‘type’ in ‘struct std::enable_if<false, void>’
+  106 |  using _Constructible = typename enable_if<
+      |        ^~~~~~~~~~~~~~
+/usr/include/c++/9/ext/new_allocator.h: In instantiation of ‘void __gnu_cxx::new_allocator<_Tp>::construct(_Up*, _Args&& ...) [with _Up = std::shared_ptr<Liscence>; _Args = {std::shared_ptr<Driver>&}; _Tp = std::shared_ptr<Liscence>]’:
+/usr/include/c++/9/bits/alloc_traits.h:483:4:   required from ‘static void std::allocator_traits<std::allocator<_CharT> >::construct(std::allocator_traits<std::allocator<_CharT> >::allocator_type&, _Up*, _Args&& ...) [with _Up = std::shared_ptr<Liscence>; _Args = {std::shared_ptr<Driver>&}; _Tp = std::shared_ptr<Liscence>; std::allocator_traits<std::allocator<_CharT> >::allocator_type = std::allocator<std::shared_ptr<Liscence> >]’
+/usr/include/c++/9/bits/vector.tcc:115:30:   required from ‘std::vector<_Tp, _Alloc>::reference std::vector<_Tp, _Alloc>::emplace_back(_Args&& ...) [with _Args = {std::shared_ptr<Driver>&}; _Tp = std::shared_ptr<Liscence>; _Alloc = std::allocator<std::shared_ptr<Liscence> >; std::vector<_Tp, _Alloc>::reference = std::shared_ptr<Liscence>&]’
+Functionalities.cpp:122:40:   required from here
+/usr/include/c++/9/bits/shared_ptr.h:234:2: note: candidate: ‘template<class _Yp> std::shared_ptr<_Tp>::shared_ptr(const std::shared_ptr<_Yp>&, std::shared_ptr<_Tp>::element_type*)’
+  234 |  shared_ptr(const shared_ptr<_Yp>& __r, element_type* __p) noexcept
+      |  ^~~~~~~~~~
+/usr/include/c++/9/bits/shared_ptr.h:234:2: note:   template argument deduction/substitution failed:
+In file included from /usr/include/x86_64-linux-gnu/c++/9/bits/c++allocator.h:33,
+                 from /usr/include/c++/9/bits/allocator.h:46,
+                 from /usr/include/c++/9/string:41,
+                 from /usr/include/c++/9/bits/locale_classes.h:40,
+                 from /usr/include/c++/9/bits/ios_base.h:41,
+                 from /usr/include/c++/9/ios:42,
+                 from /usr/include/c++/9/ostream:38,
+                 from /usr/include/c++/9/iostream:39,
+                 from Liscence.h:5,
+                 from Driver.h:5,
+                 from Functionalities.h:3,
+                 from Functionalities.cpp:1:
+/usr/include/c++/9/ext/new_allocator.h:146:4: note:   candidate expects 2 arguments, 1 provided
+  146 |  { ::new((void *)__p) _Up(std::forward<_Args>(__args)...); }
+      |    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/c++/9/memory:81,
+                 from Driver.h:6,
+                 from Functionalities.h:3,
+                 from Functionalities.cpp:1:
+/usr/include/c++/9/bits/shared_ptr.h:212:2: note: candidate: ‘template<class _Deleter, class _Alloc> std::shared_ptr<_Tp>::shared_ptr(std::nullptr_t, _Deleter, _Alloc)’
+  212 |  shared_ptr(nullptr_t __p, _Deleter __d, _Alloc __a)
+      |  ^~~~~~~~~~
+/usr/include/c++/9/bits/shared_ptr.h:212:2: note:   template argument deduction/substitution failed:
+In file included from /usr/include/x86_64-linux-gnu/c++/9/bits/c++allocator.h:33,
+                 from /usr/include/c++/9/bits/allocator.h:46,
+                 from /usr/include/c++/9/string:41,
+                 from /usr/include/c++/9/bits/locale_classes.h:40,
+                 from /usr/include/c++/9/bits/ios_base.h:41,
+                 from /usr/include/c++/9/ios:42,
+                 from /usr/include/c++/9/ostream:38,
+                 from /usr/include/c++/9/iostream:39,
+                 from Liscence.h:5,
+                 from Driver.h:5,
+                 from Functionalities.h:3,
+                 from Functionalities.cpp:1:
+/usr/include/c++/9/ext/new_allocator.h:146:4: note:   candidate expects 3 arguments, 1 provided
+  146 |  { ::new((void *)__p) _Up(std::forward<_Args>(__args)...); }
+      |    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/c++/9/memory:81,
+                 from Driver.h:6,
+                 from Functionalities.h:3,
+                 from Functionalities.cpp:1:
+/usr/include/c++/9/bits/shared_ptr.h:193:2: note: candidate: ‘template<class _Yp, class _Deleter, class _Alloc, class> std::shared_ptr<_Tp>::shared_ptr(_Yp*, _Deleter, _Alloc)’
+  193 |  shared_ptr(_Yp* __p, _Deleter __d, _Alloc __a)
+      |  ^~~~~~~~~~
+/usr/include/c++/9/bits/shared_ptr.h:193:2: note:   template argument deduction/substitution failed:
+In file included from /usr/include/x86_64-linux-gnu/c++/9/bits/c++allocator.h:33,
+                 from /usr/include/c++/9/bits/allocator.h:46,
+                 from /usr/include/c++/9/string:41,
+                 from /usr/include/c++/9/bits/locale_classes.h:40,
+                 from /usr/include/c++/9/bits/ios_base.h:41,
+                 from /usr/include/c++/9/ios:42,
+                 from /usr/include/c++/9/ostream:38,
+                 from /usr/include/c++/9/iostream:39,
+                 from Liscence.h:5,
+                 from Driver.h:5,
+                 from Functionalities.h:3,
+                 from Functionalities.cpp:1:
+/usr/include/c++/9/ext/new_allocator.h:146:4: note:   mismatched types ‘_Yp*’ and ‘std::shared_ptr<Driver>’
+  146 |  { ::new((void *)__p) _Up(std::forward<_Args>(__args)...); }
+      |    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/c++/9/memory:81,
+                 from Driver.h:6,
+                 from Functionalities.h:3,
+                 from Functionalities.cpp:1:
+/usr/include/c++/9/bits/shared_ptr.h:173:2: note: candidate: ‘template<class _Deleter> std::shared_ptr<_Tp>::shared_ptr(std::nullptr_t, _Deleter)’
+  173 |  shared_ptr(nullptr_t __p, _Deleter __d)
+      |  ^~~~~~~~~~
+/usr/include/c++/9/bits/shared_ptr.h:173:2: note:   template argument deduction/substitution failed:
+In file included from /usr/include/x86_64-linux-gnu/c++/9/bits/c++allocator.h:33,
+                 from /usr/include/c++/9/bits/allocator.h:46,
+                 from /usr/include/c++/9/string:41,
+                 from /usr/include/c++/9/bits/locale_classes.h:40,
+                 from /usr/include/c++/9/bits/ios_base.h:41,
+                 from /usr/include/c++/9/ios:42,
+                 from /usr/include/c++/9/ostream:38,
+                 from /usr/include/c++/9/iostream:39,
+                 from Liscence.h:5,
+                 from Driver.h:5,
+                 from Functionalities.h:3,
+                 from Functionalities.cpp:1:
+/usr/include/c++/9/ext/new_allocator.h:146:4: note:   candidate expects 2 arguments, 1 provided
+  146 |  { ::new((void *)__p) _Up(std::forward<_Args>(__args)...); }
+      |    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/c++/9/memory:81,
+                 from Driver.h:6,
+                 from Functionalities.h:3,
+                 from Functionalities.cpp:1:
+/usr/include/c++/9/bits/shared_ptr.h:156:2: note: candidate: ‘template<class _Yp, class _Deleter, class> std::shared_ptr<_Tp>::shared_ptr(_Yp*, _Deleter)’
+  156 |  shared_ptr(_Yp* __p, _Deleter __d)
+      |  ^~~~~~~~~~
+/usr/include/c++/9/bits/shared_ptr.h:156:2: note:   template argument deduction/substitution failed:
+In file included from /usr/include/x86_64-linux-gnu/c++/9/bits/c++allocator.h:33,
+                 from /usr/include/c++/9/bits/allocator.h:46,
+                 from /usr/include/c++/9/string:41,
+                 from /usr/include/c++/9/bits/locale_classes.h:40,
+                 from /usr/include/c++/9/bits/ios_base.h:41,
+                 from /usr/include/c++/9/ios:42,
+                 from /usr/include/c++/9/ostream:38,
+                 from /usr/include/c++/9/iostream:39,
+                 from Liscence.h:5,
+                 from Driver.h:5,
+                 from Functionalities.h:3,
+                 from Functionalities.cpp:1:
+/usr/include/c++/9/ext/new_allocator.h:146:4: note:   mismatched types ‘_Yp*’ and ‘std::shared_ptr<Driver>’
+  146 |  { ::new((void *)__p) _Up(std::forward<_Args>(__args)...); }
+      |    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/c++/9/memory:81,
+                 from Driver.h:6,
+                 from Functionalities.h:3,
+                 from Functionalities.cpp:1:
+/usr/include/c++/9/bits/shared_ptr.h:139:2: note: candidate: ‘template<class _Yp, class> std::shared_ptr<_Tp>::shared_ptr(_Yp*)’
+  139 |  shared_ptr(_Yp* __p) : __shared_ptr<_Tp>(__p) { }
+      |  ^~~~~~~~~~
+/usr/include/c++/9/bits/shared_ptr.h:139:2: note:   template argument deduction/substitution failed:
+In file included from /usr/include/x86_64-linux-gnu/c++/9/bits/c++allocator.h:33,
+                 from /usr/include/c++/9/bits/allocator.h:46,
+                 from /usr/include/c++/9/string:41,
+                 from /usr/include/c++/9/bits/locale_classes.h:40,
+                 from /usr/include/c++/9/bits/ios_base.h:41,
+                 from /usr/include/c++/9/ios:42,
+                 from /usr/include/c++/9/ostream:38,
+                 from /usr/include/c++/9/iostream:39,
+                 from Liscence.h:5,
+                 from Driver.h:5,
+                 from Functionalities.h:3,
+                 from Functionalities.cpp:1:
+/usr/include/c++/9/ext/new_allocator.h:146:4: note:   mismatched types ‘_Yp*’ and ‘std::shared_ptr<Driver>’
+  146 |  { ::new((void *)__p) _Up(std::forward<_Args>(__args)...); }
+      |    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/c++/9/memory:81,
+                 from Driver.h:6,
+                 from Functionalities.h:3,
+                 from Functionalities.cpp:1:
+/usr/include/c++/9/bits/shared_ptr.h:129:7: note: candidate: ‘std::shared_ptr<_Tp>::shared_ptr(const std::shared_ptr<_Tp>&) [with _Tp = Liscence]’
+  129 |       shared_ptr(const shared_ptr&) noexcept = default;
+      |       ^~~~~~~~~~
+/usr/include/c++/9/bits/shared_ptr.h:129:18: note:   no known conversion for argument 1 from ‘std::shared_ptr<Driver>’ to ‘const std::shared_ptr<Liscence>&’
+  129 |       shared_ptr(const shared_ptr&) noexcept = default;
+      |                  ^~~~~~~~~~~~~~~~~
+/usr/include/c++/9/bits/shared_ptr.h:127:17: note: candidate: ‘constexpr std::shared_ptr<_Tp>::shared_ptr() [with _Tp = Liscence]’
+  127 |       constexpr shared_ptr() noexcept : __shared_ptr<_Tp>() { }
+      |                 ^~~~~~~~~~
+/usr/include/c++/9/bits/shared_ptr.h:127:17: note:   candidate expects 0 arguments, 1 provided

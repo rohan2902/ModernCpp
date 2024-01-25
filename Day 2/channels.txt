@@ -1,0 +1,35 @@
+
+Toutube channels--------------------------
+
+mike shah 
+
+cppcon  // back to basics playlist 20 videos
+
+distrotube // the command line
+
+LearnLinuxTv
+
+
+// proper english videos only
+
+
+websites-------------------------------------------
+
+cppreference.com
+
+thisptr.com
+
+nextptr.com
+
+
+refactoring.guru   // website for design patterns
+
+
+Books----------------------
+
+Effective modern c++
+
+
+
+
+

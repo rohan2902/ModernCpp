@@ -1,0 +1,24 @@
+
+HASH VALUE OR HASH : the answer of a mathematical operation applied on a key
+
+HASH FUNCTION: This is the operation applied e.g.MODULUS 5
+
+HASH TABLE: This is the table of content a structure where position of each key is preserved. the key is linked with the actual value
+
+
+
+
+HASH FUNCTION : MOD3
+////////////////////////////////////////
+step 1: apply hash function on each key
+    a) 101%3 = 2
+    b) 102%3 = 0
+    c) 103%3 = 1
+    d) 104%3 = 2
+
+HASH TABLE 
+
+row0 ---> [102 | Rohan | 80000.0f]
+row1 ---> [103 | Ajay | 90000.0f]
+row2 ---> [101 | Harshit | 60000.0f] ------>[104 | Laxman | 178000]
+

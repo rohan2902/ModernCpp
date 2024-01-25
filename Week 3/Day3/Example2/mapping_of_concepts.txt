@@ -1,0 +1,96 @@
+scenario 1: I want to create a small size,script like program to perform a simple task.
+
+concepts to be used: shell script in your preferred shell
+======================================================================
+scenario 2: I want to create a container to store fixed number of elements
+
+concepts to be used:array or std::array(to take the advantage of built-in function)
+
+==================================================================================
+
+scenario 3: I want to non-fixed numbers of elements and i dont want to block 
+consecutive locations in memory for the same.
+
+concepts to be used: std::list or your implementation of list
+
+=====================================================================================
+
+scenario 4 : I want to non-fixed number of elements and I consecutively locations in the memory for the same
+
+concepts to be used: std::vector or your implementation of vector
+
+====================================================================================================
+
+scenario 5: I want to create a specific model/representation of a layout of data to be used as reference for 
+storing instances of data
+
+concepts to be used: classes or struct in cpp
+
+======================================================================================================
+
+scenario 6: I want the ability to create subtypes of my model type immediately or in future
+for each subcategory that needs to be added
+
+concepts to be used: Inheritance
+
+======================================================================================================
+scenario 7: I want to create an interface for an API to accept a type and all of its subtypes as a parameter to the API
+
+concepts to be used: Generalization with upcasting
+
+======================================================================================================
+
+scenario 8: I want to execute different logic for each subtype type passed to the fuction where parameter is of generalized type 
+
+concepts to be used: a)method overriding with implementation only in derived classes.
+b)method overriding with implementation in base & derived classes both.
+
+=================================================================================================
+
+scenario 9: I want to decide how basic operator will behave when used with my specific data type
+
+concepts to be used: operator overloading
+
+======================================================================================================
+
+scenario 10:I want to convert a pointer to a base class into a pointer to child class in such a way that if conversion fails,I get an exception AT RUN TIME
+
+concepts to be used:Dynamic cast
+
+======================================================================================================
+
+scenario 11:I want to convert a pointer to a type to some other type in a such way that if conversion fails,I can verify that at COMPILE TIME
+
+concepts to be used:static cast
+
+======================================================================================================
+
+scenario 12: I want to manage resources allocated based on scope of attached objects lifetime
+
+concepts to be used:smart pointer
+
+=====================================================================================================
+
+scenario 13: I want to deicde which special member function available or unavailable for a datatype
+
+concepts to be used:default and delete keyword
+
+====================================================================================================
+
+scenario 14: I want to store type-erased behaviour in the form of a function in a wrapper
+
+concepts to be used: std::function_wrapper
+
+===================================================================================================
+
+scenario 15: I want to store reference as a value
+
+cocnepts to be used:std::reference_wrapper
+
+===================================================================================================
+
+scenario 16: I want to used composition but in such a way that if composed type (outer class) is instantiated , it should not take null value of 
+
+concepts to be used:reference_wrapper for inner class
+
+====================================================================================================

@@ -1,0 +1,17 @@
+find: files & folders based on
+
+    - pattern of their names
+    - 
+
+
+
+
+find all files in week 3 folder that are cpp extension files
+
+find ..
+
+command-name <options>
+ 
+find .. -name "*.cpp" -type f
+
+
